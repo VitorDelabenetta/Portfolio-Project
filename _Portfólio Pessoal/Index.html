@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Portfólio | Front-End</title>
+    <meta name="description" content="Projeto de portfólio pessoal desenvolvido utilizando HTML, CSS e JavaScript.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Delabenetta">
+
+    <link rel="stylesheet" type="text/css" href="/Style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="/Imagens/Logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul class="nav">
+                <!-- Tecla shift+alt e up/down copia a linha -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contatos</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contatos</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href="https://www.instagram.com/invites/contact/?i=uyo65s6sqplr&utm_content=38k99yt" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/gabriel-d-444a06181" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/VitorDelabenetta" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="/Download/Curriculo-Tech.pdf" download="Vitor_Delabenetta_Currículo"><ion-icon name="document-attach-outline"></ion-icon></a> <!-- BAIXAR CURRÍCULO -->
+            </div>
+            <article class="title">
+                <h1>Programador</h1>
+                <h2>estudante</h2>
+                <h3>Front-End | Criatividade</h3>
+            </article>
+        </div>
+    </main>
+
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>Olá! Sou Vitor, um iniciante em programação</h1>
+                <!-- Para adicionar textos auto-gerados, usar o comando 'loremN' + enter, sendo N o número de palavras que desejamos gerar -->
+                <p>Iniciei os estudos na área através da programação Front-End. Atualmente, estou adquirindo conhecimentos em linguagem de programação Javascript.</p>
+                <div class="box-title">
+                    <p>90%</p>
+                    <div class="box_1"><div class="box_2"></div></div>
+                    <span>HTML</span>
+
+                    <p>75%</p>
+                    <div class="box_1"><div class="box_3"></div></div>
+                    <span>CSS</span>
+
+                    <p>60%</p>
+                    <div class="box_1"><div class="box_4"></div></div>
+                    <span>Bootstrap</span>
+
+                    <p>7,5%</p>
+                    <div class="box_1"><div class="box_5"></div></div>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <input type="radio" name="slider" id="item_1" checked>
+            <input type="radio" name="slider" id="item_2">
+            <input type="radio" name="slider" id="item_3">
+            <div class="cards">
+                <label class="card" for="item_1" id="song_1">
+                    <img src="/Imagens/Web-Page.jpg" alt="Imagem de um projeto desenvolvido com html/css">
+                    <h1>Destaque</h1>
+                    <p>Projeto de uma <strong>Página Web</strong> interconectada. Conta com uma estilização pessoal, possuindo temática medieval. Embora grande parte das páginas sejam estáticas, o destaque vai para a página de <em>Error404</em> que conta com interação de movimento do mouse.</p>
+                    <button><a href="https://github.com/VitorDelabenetta/Web-Page/tree/main/Web%20Page" target="_blank">Visualizar</a></button>
+                </label>
+
+                <label class="card" for="item_2" id="song_2">
+                    <img src="/Imagens/Game-Jump.jpg" alt="Imagem de um projeto desenvolvido com html/css">
+                    <h1>Recente</h1>
+                    <p>Projeto de um <strong>Jumping Game</strong> simples, semelhante ao famoso T-Rex Game da Google. O intuito deste projeto foi aplicar alguns conhecimentos iniciais da sintaxe do javascript, com variáveis, eventos e funções, de uma forma mais espontânea e divertida.</p>
+                    <button><a href="https://github.com/VitorDelabenetta/Jump-Game/tree/main/Game%20Javascript" target="_blank">Visualizar</a></button>
+                </label>
+
+                <label class="card" for="item_3" id="song_3">
+                    <img src="/Imagens/Game-ComingSoon.jpg" alt="Imagem de um projeto desenvolvido com html/css">
+                    <h1>Breve...</h1>
+                    <p>De forma semelhante ao projeto do Jumping Game, estou confeccionando um <b>clone</b> do outrora famoso <strong>Space Invaders.</strong> O objetivo é (aprender e) aplicar na prática vários conceitos da linguagem Javascript, como a manipulação do DOM (Document Object Model).</p>
+                    <button><a href="#portfolio">Visualizar</a></button>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-contact">
+                <div class="contact-left">
+                    <h1>Contacte e conecte-se</h1>
+                    <div class="line"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>delabenettag@gmail.com</span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>Whatsapp: +55 (47) 99125-6217</span>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Santa Catarina, Brasil</span>
+                </div>
+                <div class="contact-right">
+                    <h1>Preencha o formulário</h1>
+                    <div class="line"></div>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <textarea placeholder="Mensagem"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Base: https://www.youtube.com/watch?v=4U1O3MmWUfM -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- JQuery: utilização de uma biblioteca do javascript para manipular o DOM - em resumo, seria a interface que aparece para o usuário -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn-mobile").click(function() {
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+
+</body>
+</html>
